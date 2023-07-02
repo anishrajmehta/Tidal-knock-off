@@ -1,0 +1,226 @@
+@font-face {
+  font-family: 'nationale';
+  src: url('./Nationale.ttf');
+}
+
+body, h1, h2, h3, p, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 1.5;
+  background: rgb(39,40,45);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: linear-gradient(to bottom left, #23233d, #000000);
+}
+
+header {
+  background-color: #000000;
+  color: #fff;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  color:#fff;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #99c6ff;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-button,
+.signup-button {
+  background-color: #fff;
+  color: #000;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: nationale;
+  font-style: bold;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #e6e6e6;
+}
+/* Section styles */
+section {
+  padding: 40px 20px;
+  text-decoration-color: #fff;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.chart-list, .artist-list {
+  display: flex;
+  overflow-x: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.chart-list li, .artist-list li {
+  flex: 0 0 auto;
+  margin-right: 20px;
+}
+
+.chart-list li:last-child, .artist-list li:last-child {
+  margin-right: 0;
+}
+
+.genre-list.center-align {
+  display: flex;
+  justify-content: center;
+}
+
+.genre-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 30px;
+}
+
+.genre-list li {
+  width: 200px;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.genre-list li:hover {
+  transform: translateY(-5px);
+}
+
+.genre-list img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+footer {
+  color: rgb(143, 143, 143);
+  font-family: nationale;
+  margin-left: 5%;
+}
+
+.player {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.player button {
+  font-size: 24px;
+  padding: 10px 20px;
+}
+
+.chart-list,
+    .artist-list {
+      display: flex;
+      overflow-x: auto;
+      padding: 0;
+      list-style: none;
+      justify-content: center; /* Added to center align the items */
+    }
+
+    .chart-list li,
+    .artist-list li {
+      flex: 0 0 auto;
+      margin-right: 20px;
+    }
+
+    .chart-list li:last-child,
+    .artist-list li:last-child {
+      margin-right: 0;
+    }
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  display: none;
+  cursor: pointer;
+}
+  
+.chart-details:hover .play-button {
+  display: block;
+}  
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+.player button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+    
+.player button:hover {
+  background-color: #2980b9;
+}
+    
+.player button:focus {
+  outline: none;
+}
+    
+.player button:active {
+  transform: scale(0.95);
+}
